@@ -1,38 +1,86 @@
+/*  font-family: 'Source Sans Pro', sans-serif;  */
+
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
   color: #404040;
-  line-height: 1.5;
-  display: flex;
   text-align: center;
-  justify-content: center;
-  align-content: center;
 }
+
+/* =================
+   Typography 
+   ================= */
 
 h1 {
   font-size: 2.25rem;
   font-weight: 300;
+  color: #fff;
+  margin: 2em 0;
 }
-h2 {
-  font-size: 1.32rem;
-}
-.intro-join {
-  font-size: 1.32rem;
+
+h1 + p {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1.3125rem;
   text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.3125rem;
+  margin: 0;
+}
+
+h2 + p {
+  font-weight: 900;
+  color: #f18119;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.top-text {
+  font-size: 0.625rem;
+  color: #f18119;
+  font-weight: 900;
+  text-transform: uppercase;
+  order: -1;
 }
 
 .fine-print {
-  font-size: 0.65rem;
+  font-size: 0.625rem;
+  letter-spacing: 1px;
 }
 
-form {
+strong {
+  font-weight: 900;
+}
+
+/* =================
+   Intro section 
+   ================= */
+
+.intro {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/images/jon-tyson-kctt4tL1dkE-unsplash.jpg);
+  background-size: cover;
+  background-color: #404040;
+  padding: 0 0.5em 2em;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
 }
 
-.top-text,
-.intro-join,
-h3 {
-  text-transform: uppercase;
-  color: #f18119;
+/* =================
+   main-content section 
+   ================= */
+
+.main-content {
+  padding: 2em 1em;
+}
+
+@media (min-width: 600px) {
 }
