@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BBQ Master Register</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>
+    <div class="intro">
       <h1>Learn how to make <strong>the best BBQ ribs</strong> in town</h1>
-      <h2>Join us for this live webinar</h2>
-      <span> MouthWateringly Delicious</span>
-    </main>
-    <aside>
+      <p class="intro-join">Join us for this live webinar</p>
+      <p class="top-text">MouthWateringly Delicious</p>
+    </div>
+    <div class="main-content">
       <h2>Become a BBQ master!</h2>
-      <h3>Reguster Today</h3>
+      <h3>Register Today</h3>
       <p>
         BBQ isn't just standing in front of your grill wit it on full blast and
         hoping for the best. It's an art! One way to speed up the process is to
@@ -29,10 +34,19 @@
         />
         <input type="text" id="email" name="email" placeholder="email" />
 
-        <button type="submit" form="register" value="Submit">Register</button>
+        <button
+          class="btn form-btn"
+          type="submit"
+          form="register"
+          value="Submit"
+        >
+          Register
+        </button>
       </form>
 
-      <p>We'll never share your information without your permission</p>
-    </aside>
+      <p class="fine-print">
+        We'll never share your information without your permission
+      </p>
+    </div>
   </body>
 </html>
