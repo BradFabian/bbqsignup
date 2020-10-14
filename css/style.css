@@ -73,7 +73,7 @@ strong {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(/images/jon-tyson-kctt4tL1dkE-unsplash.jpg);
+    url("/images/jon-tyson-kctt4tL1dkE-unsplash.jpg");
   background-size: cover;
   background-color: #404040;
   background-position: center;
