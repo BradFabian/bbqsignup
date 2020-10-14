@@ -16,7 +16,7 @@
       <p>Join us for this live webinar</p>
       <p class="top-text">MouthWateringly Delicious</p>
     </div>
-    <div class="main-content">
+    <div id="Main-Content" class="main-content">
       <h2>Become a BBQ master!</h2>
       <p>Register Today</p>
       <p>
@@ -25,7 +25,12 @@
         learn from the best. You can do just that by signing up for this free
         webinar!
       </p>
-      <form action="#" method="POST" class="email-collector">
+      <form
+        id="Email-Collector"
+        action="#"
+        method="POST"
+        class="email-collector"
+      >
         <input
           type="text"
           id="name"
@@ -36,7 +41,7 @@
         <input
           type="email"
           id="email"
-          name="email"
+          name="emailAddress"
           placeholder="email"
           required
         />
@@ -48,5 +53,6 @@
         We'll never share your information without your permission
       </p>
     </div>
+    <script src="/app/index.js"></script>
   </body>
 </html>
