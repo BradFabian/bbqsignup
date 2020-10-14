@@ -1,11 +1,14 @@
 /*  font-family: 'Source Sans Pro', sans-serif;  */
-
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
   color: #404040;
   text-align: center;
+  min-height: 100vh;
 }
 
 /* =================
@@ -16,7 +19,7 @@ h1 {
   font-size: 2.25rem;
   font-weight: 300;
   color: #fff;
-  margin: 2em 0;
+  margin: 0;
 }
 
 h1 + p {
@@ -41,10 +44,14 @@ h2 + p {
 
 .top-text {
   font-size: 0.625rem;
+  margin: 0;
+  padding-top: 2px;
   color: #f18119;
   font-weight: 900;
   text-transform: uppercase;
   order: -1;
+  border-top: 5px solid #ff713b;
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
 }
 
 .fine-print {
@@ -69,9 +76,61 @@ strong {
     url(/images/jon-tyson-kctt4tL1dkE-unsplash.jpg);
   background-size: cover;
   background-color: #404040;
+  background-position: center;
   padding: 0 0.5em 2em;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+
+/* =================
+  form 
+   ================= */
+
+.email-collector {
+  width: 70%;
+  max-width: 300px;
+}
+input {
+  margin-bottom: 0.5em;
+  padding: 0.23em;
+  border: 0.5px solid #404040;
+  transform: scale(1);
+  transition: transfrom 250ms;
+}
+
+input:focus {
+  transform: scale(1.1);
+}
+
+input,
+.btn {
+  width: 100%;
+
+  font-family: inherit;
+  text-align: inherit;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  display: inline-block;
+  font-size: 0.625em;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to left, #ff713b, #ffa51d);
+  border: inherit;
+  color: #fff;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: scale(1.1);
 }
 
 /* =================
@@ -82,5 +141,37 @@ strong {
   padding: 2em 1em;
 }
 
+.intro *,
+.main-content * {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 600px) {
+  body {
+    font-size: 1.13rem;
+    display: flex;
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2,
+  h1 + p {
+    font-size: 1.75rem;
+  }
+
+  .intro,
+  .main-content {
+    width: 50%;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
